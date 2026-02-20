@@ -13,6 +13,6 @@ public class LineItem {
 
     @Override
     public String toString() {
-        return product.getDescription() + "\t" + product.getPrice() + "\t" + quantity + "\t" + getTotalPrice();
+        return String.format(Invoice.FORMAT_STRING, this.product.getDescription(), this.product.getPrice(), this.quantity, getTotalPrice());
     }
 }

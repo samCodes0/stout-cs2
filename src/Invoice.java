@@ -4,6 +4,7 @@ public class Invoice {
     private Address billingAddress;
     private ArrayList<LineItem> items;
 
+    public static final String FORMAT_STRING = "%-15s%-10s%-10s%-10s\n"; // describes the format of the invoice to be used with printf with 4 arguments
 
     public Invoice(Address billingAddress) {
         this.billingAddress = billingAddress;
@@ -24,13 +25,15 @@ public class Invoice {
 
     @Override
     public String toString() {
-        String out = billingAddress.getName() + "\n";
-        out += billingAddress.getStreet() + "\n";
-        out += billingAddress.getCity() + ", " + billingAddress.getState() + " " + billingAddress.getZip() + "\n\n";
-        out += "Description\t\tPrice\tQty\tTotal\n";
+        // TODO: add amount due at the end of the invoice
+
+        String out = String.format("%s\n%s\n%s, %s, %s\n\n", billingAddress.getName(), billingAddress.getStreet(), billingAddress.getCity(), billingAddress.getState(), billingAddress.getZip());
+        out += String.format(FORMAT_STRING, "Description", "price", "Qty", "Total");
         for (LineItem item : items) {
-            out += item.toString() + "\n";
+            out += item.toString();
         }
+        // append the total due to the end of the invoice
+        out += String.format("Amount Due: $%.2f", getTotalDue());
         return out;
     }
 }
