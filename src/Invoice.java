@@ -44,8 +44,6 @@ public class Invoice {
      */
     @Override
     public String toString() {
-        // TODO: add amount due at the end of the invoice
-
         String out = String.format("%s\n%s\n%s, %s, %s\n\n", billingAddress.getName(), billingAddress.getStreet(), billingAddress.getCity(), billingAddress.getState(), billingAddress.getZip());
         out += String.format(FORMAT_STRING, "Description", "price", "Qty", "Total");
         for (LineItem item : items) {
