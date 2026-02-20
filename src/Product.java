@@ -1,5 +1,11 @@
+/**
+ * @author Sam Doyle
+ * Date: 02/19/2026
+ * Description: represents a product with a description and price
+ */
+
 public class Product {
-    private String description;
+    private String description;  // brief string describing the product, or just the name of the product
     private double price;
 
     public Product(String description, double price) {

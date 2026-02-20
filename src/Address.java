@@ -1,3 +1,9 @@
+/**
+ * @author Sam Doyle
+ * Date: 02/19/2026
+ * Description: represents an abstract address with a name, street, city, state, and zip code
+ */
+
 public class Address {
     private String name, street, city, state, zip;
 
