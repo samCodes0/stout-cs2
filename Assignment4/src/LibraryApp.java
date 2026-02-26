@@ -5,5 +5,8 @@ public class LibraryApp {
         library.addBook(new Book("The Annotated Turing", "Charles Petzold"));
         library.addBook(new Book("The Maniac", "Benjamín Labatut"));
         library.addBook(new Book("Gardens of the Moon", "Steven Erikson"));
+        boolean result = library.borrowBook("Assassin's Apprentice");
+        boolean result2 = library.borrowBook("Assassin's Apprentice");
+        System.out.println(result2);
     }
 }
