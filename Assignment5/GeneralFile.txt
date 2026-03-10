@@ -1,0 +1,4 @@
+In OOP, Encapsulation is one of the four essential OOP concepts. 
+Encapsulation in Java also known as data hiding is a mechanism of 
+wrapping the data members (variables) and code acting on the data 
+(methods) together as a single unit. 

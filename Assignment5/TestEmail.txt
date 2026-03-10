@@ -1,0 +1,10 @@
+senderxyz@gmail.com
+recipientxyz@gmail.com
+Midterm Exam!
+Dear Professor
+I am writing this email to ensure that the 
+topics Classes, Inheritance, Abstract Classes,
+and Polymorphism are included in the exam.
+
+Thank you!
+CS-145 stuents
