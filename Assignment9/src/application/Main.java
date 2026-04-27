@@ -21,6 +21,11 @@ import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
+/**
+ * @author Sam Doyle
+ * Date: 04/27/2026
+ * Description: A graphical application for entering some information about a student, and saving it to a file 
+ */
 public class Main extends Application {
 	private static final int SCENE_WIDTH = 370; // the width of the window
 	private static final int SCENE_HEIGHT = 170; // height of the window
@@ -40,7 +45,7 @@ public class Main extends Application {
 	private RadioButton graduateButton;
 	private Button saveButton;
 
-	final String RECORDS_FILENAME = "records.txt";
+	final String RECORDS_FILENAME = "records.txt";  // name of the file to save student info too
 	private final Alert EMPTY_BOX_WARNING = new Alert(AlertType.WARNING, "student name or email cannot be empty!",
 			ButtonType.OK);
 	private final Alert WRITE_ALERT = new Alert(AlertType.INFORMATION, "wrote student information to the file " + RECORDS_FILENAME, ButtonType.OK);
